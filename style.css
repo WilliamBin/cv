@@ -40,7 +40,8 @@ p {
     padding: 1em 2em;
     margin: 2em;
     color: #fff;
-    background-color: #333 text-decoration: none;
+    background-color: #333;
+    text-decoration: none;
 
 }
 
@@ -63,60 +64,72 @@ p {
     height: 450px;
     z-index: -1;
 }
-#skill{
+
+#skill {
     background-color: #fff;
     color: #333;
     padding-bottom: 2em;
 }
-.content-wrap{
+
+.content-wrap {
     padding: 0 1.5em;
 }
-#service{
+
+#service {
     padding: 2em 1em 1em;
 }
-.card-content{
+
+.card-content {
     padding: 1em;
 }
-#promise{
+
+#promise {
     background-color: #fff;
     color: #333;
     padding: 2em 0;
 }
-#contact .box:first-child{
+
+#contact .box:first-child {
     background: rgb(42, 125, 233)
 }
-#contact .box{
-    padding:1em;
+
+#contact .box {
+    padding: 1em;
 
 }
-footer{
+
+footer {
     background-color: #000;
     padding: 2em;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: rgb(42, 125, 233);
 }
-@media(min-width:700px){
-    .grid{
+
+@media(min-width:700px) {
+    .grid {
         display: grid;
-        grid-template-columns: 1fr
-        repeat(2,minmax(auto,25em))
-        1fr;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
     }
+
     .content-wrap,
-    #service ul{
+    #service ul {
         grid-column: 2/4;
     }
+
     .box,
-    footer div{
+    footer div {
         grid-column: span 2;
     }
+
     #service ul {
         display: flex;
         justify-content: space-around;
     }
-    #service li{
+
+    #service li {
         width: 30%;
     }
 }
